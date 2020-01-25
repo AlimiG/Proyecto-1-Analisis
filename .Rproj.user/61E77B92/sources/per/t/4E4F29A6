@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "398254563",
+    "hash" : "3177276932",
     "id" : "4E4F29A6",
-    "lastKnownWriteTime" : 1579828983,
-    "last_content_update" : 1579828983424,
+    "lastKnownWriteTime" : 1579928466,
+    "last_content_update" : 1579928466109,
     "path" : "~/Escritorio/analisis de datos/proyecto 1/proyecto1.R",
     "project_path" : "proyecto1.R",
     "properties" : {
-        "cursorPosition" : "13,68",
-        "scrollLine" : "0"
+        "cursorPosition" : "27,0",
+        "scrollLine" : "16"
     },
     "read_only" : false,
     "read_only_alternatives" : [
