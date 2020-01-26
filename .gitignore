@@ -2,3 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
+.fls
+.log
+.synctex.gz
+.fdb_latexmk
+.aux
