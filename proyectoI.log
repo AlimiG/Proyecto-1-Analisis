@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.11.3)  25 JAN 2020 22:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.11.3)  26 JAN 2020 19:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -232,21 +232,30 @@ File: lstlang3.sty 2015/06/04 1.6 listings language file
 
 LaTeX Warning: Label `fig:minipage1' multiply defined.
 
+
+LaTeX Warning: Label `fig:minipage1' multiply defined.
+
+
+LaTeX Warning: Label `fig:minipage1' multiply defined.
+
+
+LaTeX Warning: Label `fig:minipage1' multiply defined.
+
 )
 \openout1 = `proyectoI.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
@@ -365,96 +374,144 @@ Overfull \hbox (321.51619pt too wide) in paragraph at lines 34--43
 []$[]$$[]$$[]$
  []
 
-Package epstopdf Info: Source file: <Output/Plots/RepresentacionPorRaza.eps>
-(epstopdf)                    date: 2020-01-25 07:27:41
-(epstopdf)                    size: 4643 bytes
-(epstopdf)             Output file: <Output/Plots/RepresentacionPorRaza-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-25 07:28:07
-(epstopdf)                    size: 11572 bytes
-(epstopdf)             Command: <repstopdf --outfile=Output/Plots/RepresentacionPorRaza-eps-converted-to.pdf Output/Plots/RepresentacionPorRaza.eps>
+Package epstopdf Info: Source file: <Output/Plots/1_Representaciondelsalonporrazaetnica.eps>
+(epstopdf)                    date: 2020-01-26 15:49:34
+(epstopdf)                    size: 4642 bytes
+(epstopdf)             Output file: <Output/Plots/1_Representaciondelsalonporrazaetnica-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-01-26 15:49:47
+(epstopdf)                    size: 11575 bytes
+(epstopdf)             Command: <repstopdf --outfile=Output/Plots/1_Representaciondelsalonporrazaetnica-eps-converted-to.pdf Output/Plots/1_Representaciondelsalonporrazaetnica.eps>
 (epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file /home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/RepresentacionPorRaza-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Output/Plots/RepresentacionPorRaza-eps-converted-to.pdf, id=2, 602.25pt x 377.41pt>
-File: Output/Plots/RepresentacionPorRaza-eps-converted-to.pdf Graphic file (type pdf)
- <use Output/Plots/RepresentacionPorRaza-eps-converted-to.pdf>
-Package pdftex.def Info: Output/Plots/RepresentacionPorRaza-eps-converted-to.pdf used on input line 49.
-(pdftex.def)             Requested size: 481.80064pt x 301.9284pt.
-Package epstopdf Info: Source file: <Output/Plots/DesempenoAlumnosRazaC.eps>
-(epstopdf)                    date: 2020-01-25 08:59:16
-(epstopdf)                    size: 5618 bytes
-(epstopdf)             Output file: <Output/Plots/DesempenoAlumnosRazaC-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-25 09:41:09
-(epstopdf)                    size: 12029 bytes
-(epstopdf)             Command: <repstopdf --outfile=Output/Plots/DesempenoAlumnosRazaC-eps-converted-to.pdf Output/Plots/DesempenoAlumnosRazaC.eps>
-(epstopdf)             \includegraphics on input line 73.
+pdfTeX warning: pdflatex (file /home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/1_Representaciondelsalonporrazaetnica-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Output/Plots/1_Representaciondelsalonporrazaetnica-eps-converted-to.pdf, id=2, 602.25pt x 360.34625pt>
+File: Output/Plots/1_Representaciondelsalonporrazaetnica-eps-converted-to.pdf Graphic file (type pdf)
+ <use Output/Plots/1_Representaciondelsalonporrazaetnica-eps-converted-to.pdf>
+Package pdftex.def Info: Output/Plots/1_Representaciondelsalonporrazaetnica-eps-converted-to.pdf used on input line 49.
+(pdftex.def)             Requested size: 481.80064pt x 288.27739pt.
+Package epstopdf Info: Source file: <Output/Plots/2Mathgrupos.eps>
+(epstopdf)                    date: 2020-01-26 16:20:28
+(epstopdf)                    size: 6691 bytes
+(epstopdf)             Output file: <Output/Plots/2Mathgrupos-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-01-26 17:26:47
+(epstopdf)                    size: 11617 bytes
+(epstopdf)             Command: <repstopdf --outfile=Output/Plots/2Mathgrupos-eps-converted-to.pdf Output/Plots/2Mathgrupos.eps>
+(epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file /home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/DesempenoAlumnosRazaC-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Output/Plots/DesempenoAlumnosRazaC-eps-converted-to.pdf, id=3, 526.96875pt x 560.0925pt>
-File: Output/Plots/DesempenoAlumnosRazaC-eps-converted-to.pdf Graphic file (type pdf)
- <use Output/Plots/DesempenoAlumnosRazaC-eps-converted-to.pdf>
-Package pdftex.def Info: Output/Plots/DesempenoAlumnosRazaC-eps-converted-to.pdf used on input line 73.
-(pdftex.def)             Requested size: 316.18369pt x 336.05809pt.
+pdfTeX warning: pdflatex (file /home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/2Mathgrupos-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Output/Plots/2Mathgrupos-eps-converted-to.pdf, id=3, 479.7925pt x 288.07625pt>
+File: Output/Plots/2Mathgrupos-eps-converted-to.pdf Graphic file (type pdf)
+ <use Output/Plots/2Mathgrupos-eps-converted-to.pdf>
+Package pdftex.def Info: Output/Plots/2Mathgrupos-eps-converted-to.pdf used on input line 60.
+(pdftex.def)             Requested size: 383.8345pt x 230.4613pt.
+Package epstopdf Info: Source file: <Output/Plots/Writtinggrupos.eps>
+(epstopdf)                    date: 2020-01-26 16:20:52
+(epstopdf)                    size: 6461 bytes
+(epstopdf)             Output file: <Output/Plots/Writtinggrupos-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-01-26 16:21:49
+(epstopdf)                    size: 11221 bytes
+(epstopdf)             Command: <repstopdf --outfile=Output/Plots/Writtinggrupos-eps-converted-to.pdf Output/Plots/Writtinggrupos.eps>
+(epstopdf)             \includegraphics on input line 69.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file /home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/Writtinggrupos-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Output/Plots/Writtinggrupos-eps-converted-to.pdf, id=4, 479.7925pt x 288.07625pt>
+File: Output/Plots/Writtinggrupos-eps-converted-to.pdf Graphic file (type pdf)
+ <use Output/Plots/Writtinggrupos-eps-converted-to.pdf>
+Package pdftex.def Info: Output/Plots/Writtinggrupos-eps-converted-to.pdf used on input line 69.
+(pdftex.def)             Requested size: 383.8345pt x 230.4613pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/alimi/Escritorio/analisis de datos/proyecto 1/usblogo-eps-converted-to.pdf> </home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/RepresentacionPorRaza-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <Output/Plots/5Correlation.eps>
-(epstopdf)                    date: 2020-01-25 10:23:50
-(epstopdf)                    size: 36960 bytes
-(epstopdf)             Output file: <Output/Plots/5Correlation-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-25 10:24:51
-(epstopdf)                    size: 59420 bytes
-(epstopdf)             Command: <repstopdf --outfile=Output/Plots/5Correlation-eps-converted-to.pdf Output/Plots/5Correlation.eps>
-(epstopdf)             \includegraphics on input line 85.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/alimi/Escritorio/analisis de datos/proyecto 1/usblogo-eps-converted-to.pdf> </home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/1_Representaciondelsalonporrazaetnica-eps-converted-to.pdf> </home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/2Mathgrupos-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Output/Plots/Readinggrupos.eps>
+(epstopdf)                    date: 2020-01-26 16:21:08
+(epstopdf)                    size: 6482 bytes
+(epstopdf)             Output file: <Output/Plots/Readinggrupos-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-01-26 16:21:49
+(epstopdf)                    size: 11140 bytes
+(epstopdf)             Command: <repstopdf --outfile=Output/Plots/Readinggrupos-eps-converted-to.pdf Output/Plots/Readinggrupos.eps>
+(epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file /home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/5Correlation-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Output/Plots/5Correlation-eps-converted-to.pdf, id=22, 282.05376pt x 300.12125pt>
-File: Output/Plots/5Correlation-eps-converted-to.pdf Graphic file (type pdf)
- <use Output/Plots/5Correlation-eps-converted-to.pdf>
-Package pdftex.def Info: Output/Plots/5Correlation-eps-converted-to.pdf used on input line 85.
-(pdftex.def)             Requested size: 253.84602pt x 270.10663pt.
- [2 </home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/DesempenoAlumnosRazaC-eps-converted-to.pdf> </home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/5Correlation-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <Output/Plots/DistanciaMahalanobis.eps>
-(epstopdf)                    date: 2020-01-25 17:48:01
-(epstopdf)                    size: 4585 bytes
-(epstopdf)             Output file: <Output/Plots/DistanciaMahalanobis-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-25 17:52:50
-(epstopdf)                    size: 11685 bytes
-(epstopdf)             Command: <repstopdf --outfile=Output/Plots/DistanciaMahalanobis-eps-converted-to.pdf Output/Plots/DistanciaMahalanobis.eps>
+pdfTeX warning: pdflatex (file /home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/Readinggrupos-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Output/Plots/Readinggrupos-eps-converted-to.pdf, id=33, 479.7925pt x 288.07625pt>
+File: Output/Plots/Readinggrupos-eps-converted-to.pdf Graphic file (type pdf)
+ <use Output/Plots/Readinggrupos-eps-converted-to.pdf>
+Package pdftex.def Info: Output/Plots/Readinggrupos-eps-converted-to.pdf used on input line 78.
+(pdftex.def)             Requested size: 383.8345pt x 230.4613pt.
+Package epstopdf Info: Source file: <Output/Plots/5CorrgrupoA.eps>
+(epstopdf)                    date: 2020-01-26 18:07:45
+(epstopdf)                    size: 18067 bytes
+(epstopdf)             Output file: <Output/Plots/5CorrgrupoA-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-01-26 18:24:41
+(epstopdf)                    size: 28286 bytes
+(epstopdf)             Command: <repstopdf --outfile=Output/Plots/5CorrgrupoA-eps-converted-to.pdf Output/Plots/5CorrgrupoA.eps>
+(epstopdf)             \includegraphics on input line 93.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file /home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/5CorrgrupoA-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Output/Plots/5CorrgrupoA-eps-converted-to.pdf, id=34, 479.7925pt x 288.07625pt>
+File: Output/Plots/5CorrgrupoA-eps-converted-to.pdf Graphic file (type pdf)
+ <use Output/Plots/5CorrgrupoA-eps-converted-to.pdf>
+Package pdftex.def Info: Output/Plots/5CorrgrupoA-eps-converted-to.pdf used on input line 93.
+(pdftex.def)             Requested size: 227.62204pt x 136.6706pt.
+
+Overfull \hbox (9.95993pt too wide) in paragraph at lines 93--95
+[][]
+ []
+
+Package epstopdf Info: Source file: <Output/Plots/6CorrelaciongrupoE.eps>
+(epstopdf)                    date: 2020-01-26 18:09:14
+(epstopdf)                    size: 22593 bytes
+(epstopdf)             Output file: <Output/Plots/6CorrelaciongrupoE-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-01-26 18:24:41
+(epstopdf)                    size: 36585 bytes
+(epstopdf)             Command: <repstopdf --outfile=Output/Plots/6CorrelaciongrupoE-eps-converted-to.pdf Output/Plots/6CorrelaciongrupoE.eps>
 (epstopdf)             \includegraphics on input line 100.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file /home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/DistanciaMahalanobis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Output/Plots/DistanciaMahalanobis-eps-converted-to.pdf, id=43, 376.40625pt x 400.49625pt>
-File: Output/Plots/DistanciaMahalanobis-eps-converted-to.pdf Graphic file (type pdf)
- <use Output/Plots/DistanciaMahalanobis-eps-converted-to.pdf>
-Package pdftex.def Info: Output/Plots/DistanciaMahalanobis-eps-converted-to.pdf used on input line 100.
-(pdftex.def)             Requested size: 338.76248pt x 360.4433pt.
- [3 </home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/DistanciaMahalanobis-eps-converted-to.pdf>] (/home/alimi/Escritorio/analisis de datos/proyecto 1/proyectoI.aux)
+pdfTeX warning: pdflatex (file /home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/6CorrelaciongrupoE-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Output/Plots/6CorrelaciongrupoE-eps-converted-to.pdf, id=35, 479.7925pt x 288.07625pt>
+File: Output/Plots/6CorrelaciongrupoE-eps-converted-to.pdf Graphic file (type pdf)
+ <use Output/Plots/6CorrelaciongrupoE-eps-converted-to.pdf>
+Package pdftex.def Info: Output/Plots/6CorrelaciongrupoE-eps-converted-to.pdf used on input line 100.
+(pdftex.def)             Requested size: 227.62204pt x 136.6706pt.
+
+Overfull \hbox (9.95993pt too wide) in paragraph at lines 100--102
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--111
+
+ []
+
+[2 </home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/Writtinggrupos-eps-converted-to.pdf> </home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/Readinggrupos-eps-converted-to.pdf> </home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/5CorrgrupoA-eps-converted-to.pdf> </home/alimi/Escritorio/analisis de datos/proyecto 1/Output/Plots/6CorrelaciongrupoE-eps-converted-to.pdf>] (/home/alimi/Escritorio/analisis de datos/proyecto 1/proyectoI.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6145 strings out of 493029
- 85998 string characters out of 6136234
- 199371 words of memory out of 5000000
- 9571 multiletter control sequences out of 15000+600000
+ 5457 strings out of 493029
+ 79131 string characters out of 6136234
+ 179536 words of memory out of 5000000
+ 8881 multiletter control sequences out of 15000+600000
  6675 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,40p,364b,1586s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,40p,364b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "/home/alimi/Escritorio/analisis de datos/proyecto 1/proyectoI.pdf" (3 pages, 115735 bytes).
+Output written on "/home/alimi/Escritorio/analisis de datos/proyecto 1/proyectoI.pdf" (2 pages, 122773 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 79 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

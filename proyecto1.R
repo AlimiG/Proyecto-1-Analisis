@@ -1,14 +1,19 @@
-setwd(getwd())
 clase = as.data.frame(read.csv("Data/StudentsPerformance.csv",header = T))
 head(clase)
 attach(clase)
 # Buscamos que porcentaje, si es minoria o no entro de la clase, el grupo nalizar ico C
-race = 2 #por querer analizar al grupo 3
+racea= 1
+racee = 5
 group = 3
-representation <- table(clase[race])
+representation <- table(clase[2])
 bp <- barplot(representation,names.arg =c("Grupo A","Grupo B","Grupo C","Grupo D","Grupo E"),main = "Representacion del salon por raza etnica")
 abline(h=0)
 text(bp, representation/2,labels = round(representation*100/(sum(representation)),digits = 1))
+
+
+
+
+
 
 
 
@@ -22,8 +27,6 @@ library(xts)
 library(zoo)
 library(PerformanceAnalytics)
 chart.Correlation(raceC[6:8],histogram = F,pch = 16)
-boxplot((raceC[raceC$gender == "male",])[6:8],ylab = "Puntaje",names = c("Math","Reading",'Writting'),main = 'Masculino')
-boxplot((raceC[raceC$gender == "female",])[6:8],ylab = "Puntaje",names = c("Math","Reading",'Writting'),main = 'Femenino')
 
 
 #Alumnos alejados del centroide
@@ -34,7 +37,13 @@ dim(raceC[dist>1,])[1]
 
 ## Comenzaremos por analizar las notas segun el genero de los alumnos
 # Procedemos a realizar una comparacion por genero
-genero <- table(raceC[gender])
+genero <- table(raceC[1])
 bp <- barplot(genero,names.arg =c("Masculino","Femenino"),main = "Representacion por genero")
 abline(h=0)
+
 text(bp, genero/2,labels = round(genero*100/(sum(genero)),digits = 1))
+
+
+
+boxplot((raceC[raceC$gender == "male",])[6:8],ylab = "Puntaje",names = c("Math","Reading",'Writting'),main = 'Masculino')
+boxplot((raceC[raceC$gender == "female",])[6:8],ylab = "Puntaje",names = c("Math","Reading",'Writting'),main = 'Femenino')
