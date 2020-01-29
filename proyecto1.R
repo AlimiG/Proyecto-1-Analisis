@@ -32,6 +32,13 @@ groupE = clase[clase$race.ethnicity == "group E" ,]
 write.csv(groupsAE, "Output/Data/groupE.csv") #DataSet con solo los grupos A y E
 
 
+
+groupAfeo = clase[clase$race.ethnicity == "group A" & clase$lunch == "free/reduced" 
+                  & clase$test.preparation.course == "none",]
+
+groupEfino = clase[clase$race.ethnicity == "group E" & clase$lunch == "standard" 
+                  & clase$test.preparation.course == "completed",]
+
 ## Prueba
 panel.hist <- function(x, ...)
 {
@@ -122,15 +129,15 @@ boxplot(split(groupA$reading.score,groupA$lunch),
         names = c("Gratis","Standar"))
 #Grupo E
 par(mfrow = c(1,3))
-boxplot(split(groupE$math.score,groupE$test),
+boxplot(split(groupE$math.score,groupE$lunch),
         main = "Matematicas",
         col = "brown",
         names = c("Gratis","Standar"))
-boxplot(split(groupE$writing.score,groupE$test),
+boxplot(split(groupE$writing.score,groupE$lunch),
         main = "Escritura",
         col = "brown",
         names = c("Gratis","Standar"))
-boxplot(split(groupE$reading.score,groupE$test),
+boxplot(split(groupE$reading.score,groupE$lunch),
         main = "Lectura",
         col = "brown",
         names = c("Gratis","Standar"))
@@ -144,35 +151,131 @@ bpE <- barplot(preparationE,names.arg =c("Gratis","Standar"),ylab = "Numero de a
 text(bpE, preparationE/2,labels = round(preparationE*100/(sum(preparationE)),digits = 1))
 
 
+#Analisis de educacion parental
 
 
-# Ahora seleccionamos solo los alumnos de la raza C
-raceC = clase[clase$race.ethnicity == "group C",]
-boxplot(raceC[6:8],ylab = "Puntaje", names=c("Math","Reading","Writting"), main = "Desempeno de los alumnos de raza C")
+par(mfrow = c(1,3))
+boxplot(split(groupA$math.score,groupA$parental.level.of.education),
+        main = "Matematicas",
+        col = "orange")
+boxplot(split(groupA$writing.score,groupA$parental.level.of.education),
+        main = "Escritura",
+        col = "orange")
+boxplot(split(groupA$reading.score,groupA$parental.level.of.education),
+        main = "Lectura",
+        col = "orange")
+#Grupo E
+par(mfrow = c(1,3))
+boxplot(split(groupE$math.score,groupE$parental.level.of.education),
+        main = "Matematicas",
+        col = "brown")
+boxplot(split(groupE$writing.score,groupE$parental.level.of.education),
+        main = "Escritura",
+        col = "brown")
+boxplot(split(groupE$reading.score,groupE$parental.level.of.education),
+        main = "Lectura",
+        col = "brown")
+
+preparationA <- table(groupA[3])
+bpA <- barplot(preparationA,ylab = "Numero de alumnos",main = "Proporcion preparacion de los padres Grupo A")
+text(bpA, preparationA/2,labels = round(preparationA*100/(sum(preparationA)),digits = 1))
+
+preparationE <- table(groupE[3])
+bpE <- barplot(preparationE,ylab = "Numero de alumnos",main = "Proporcion preparacion de los padres Grupo E")
+text(bpE, preparationE/2,labels = round(preparationE*100/(sum(preparationE)),digits = 1))
 
 
-#Revisamos la correlacion entre materias
-library(xts)
-library(zoo)
-library(PerformanceAnalytics)
-chart.Correlation(raceC[6:8],histogram = F,pch = 16)
+
+#Analisis por genero
+par(mfrow = c(1,3))
+boxplot(split(groupA$math.score,groupA$gender),
+        main = "Matematicas",
+        col = "orange")
+boxplot(split(groupA$writing.score,groupA$gender),
+        main = "Escritura",
+        col = "orange")
+boxplot(split(groupA$reading.score,groupA$gender),
+        main = "Lectura",
+        col = "orange")
 
 
-#Alumnos alejados del centroide
-dist = mahalanobis(raceC[6:8],colMeans(raceC[6:8]),cov(raceC[6:8]))
-hist(dist, main = "Distancia de Mahalanobis",xlab = "Distancia de Mahalanobis",ylab = "Frecuencia")
-dim(raceC[dist>1,])[1]
+par(mfrow = c(1,3))
+boxplot(split(groupE$math.score,groupE$gender),
+        main = "Matematicas",
+        col = "brown")
+boxplot(split(groupE$writing.score,groupE$gender),
+        main = "Escritura",
+        col = "brown")
+boxplot(split(groupE$reading.score,groupE$gender),
+        main = "Lectura",
+        col = "brown")
+
+preparationA <- table(groupA[1])
+bpA <- barplot(preparationA,ylab = "Numero de alumnos",main = "Proporcion de genero Grupo A")
+text(bpA, preparationA/2,labels = round(preparationA*100/(sum(preparationA)),digits = 1))
+
+preparationE <- table(groupE[1])
+bpE <- barplot(preparationE,ylab = "Numero de alumnos",main = "Proporcion de genero Grupo E")
+text(bpE, preparationE/2,labels = round(preparationE*100/(sum(preparationE)),digits = 1))
 
 
-## Comenzaremos por analizar las notas segun el genero de los alumnos
-# Procedemos a realizar una comparacion por genero
-genero <- table(raceC[1])
-bp <- barplot(genero,names.arg =c("Masculino","Femenino"),main = "Representacion por genero")
-abline(h=0)
+#Analisis distancia de Mahalonbis
+A = as.matrix(groupA[6:8])
+meanA = colMeans(A)
+covA = cov(A)
+distA = mahalanobis(A,meanA,covA)
+plot(A, pch = '.', main = "Distancia de Mahalanobis para el grupo A",xlab = ' ', ylab = '',frame= F)
+points(A[distA > 5,], pch = '*', col = "orange")
+par(mfrow = c(1,2))
+hist(distA,col = "orange", main = "Distancia de Mahalanobis Grupo A",xlab = "Distancia de Mahalanobis", ylab = "Frecuencia")
+boxplot(distA, col = 'orange', main= "Distancia de Mahalanobis Grupo A")
 
-text(bp, genero/2,labels = round(genero*100/(sum(genero)),digits = 1))
+#Analisis distancia de Mahalonbis
+E = as.matrix(groupE[6:8])
+meanE = colMeans(E)
+covE = cov(E)
+distE = mahalanobis(E,meanE,covE)
+plot(E, pch = '.', main = "Distancia de Mahalanobis para el grupo E",xlab = ' ', ylab = '',frame= F)
+points(E[distE > 5,], pch = '*', col = "brown")
+par(mfrow = c(1,2))
+hist(distE,col = "brown", main = "Distancia de Mahalanobis Grupo E",xlab = "Distancia de Mahalanobis", ylab = "Frecuencia")
+boxplot(distE, col = 'brown', main= "Distancia de Mahalanobis Grupo E")
 
 
 
-boxplot((raceC[raceC$gender == "male",])[6:8],ylab = "Puntaje",names = c("Math","Reading",'Writting'),main = 'Masculino')
-boxplot((raceC[raceC$gender == "female",])[6:8],ylab = "Puntaje",names = c("Math","Reading",'Writting'),main = 'Femenino')
+
+#Analisis normalidad
+par(mfrow = c(3,1))
+
+qqnorm(groupA$math.score, pch = 1, frame = F,main = "Matematicas")
+qqline(groupA$math.score,col = "orange", lwd = 2)
+
+qqnorm(groupA$reading.score, pch = 1, frame = F,main = "Lectura")
+qqline(groupA$reading.score,col = "orange", lwd = 2)
+
+qqnorm(groupA$writing.score, pch = 1, frame = F, main = "Escritura")
+qqline(groupA$writing.score,col = "orange", lwd = 2)
+
+par(mfrow = c(3,1))
+qqnorm(groupE$math.score, pch = 1, frame = F,main = "Matematicas")
+qqline(groupE$math.score,col = "brown", lwd = 2)
+
+qqnorm(groupE$reading.score, pch = 1, frame = F,main = "Lectura")
+qqline(groupE$reading.score,col = "brown", lwd = 2)
+
+qqnorm(groupE$writing.score, pch = 1, frame = F,main = "Escritura")
+qqline(groupE$writing.score,col = "brown", lwd = 2)
+
+#Disparidad
+## Tanto almuerzo como curs
+l = c(21,40)
+k = c(89,140)
+bp <- barplot(l,main = "Acceso a ambos privilegios", col =c("orange","brown"), names.arg = c('Grupo A', 'Grupo E'))
+text(bp, l/2,labels = round(representation*100/(sum(representation)),digits = 1))
+## Acceso a almuerzo
+l = c(53,99)
+barplot(l,main = "Acceso almuerzo completo", col =c("orange","brown"), names.arg = c('Grupo A', 'Grupo E'))
+## Acceso a curso de nivelacion
+l = c(31,60)
+barplot(l,main = "Acceso a curso de nivelacion", col =c("orange","brown"), names.arg = c('Grupo A', 'Grupo E'))
+
